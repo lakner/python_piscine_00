@@ -8,7 +8,7 @@ def NULL_not_found(object: any) -> int:
         name = "Cheese"
     elif (isinstance(object, int)):
         name = "Zero"
-    elif (isinstance(object, str) and object != "Brian"):
+    elif (isinstance(object, str) and not object):
         name = "Empty"
     elif (isinstance(object, bool)):
         name = "Fake"
